@@ -1,0 +1,273 @@
+---
+
+ 
+---
+
+
+<section class="overflow-x-hidden flex justify-center items-center py-28 min-h-screen bg-gradient-to-t from-[#1E1357] to-[#6936EA] font-syne ">
+ <form id="formulario" class="w-11/12 flex flex-col gap-6 bg-gradient-to-br from-[#BBFCFE] via-white to-[#FECEFF] rounded-t-xl lining-nums">
+  <header class="bg-[#00FFFF] py-3 rounded-t-xl">
+   <h2 id="tituloFormulario" data-scroll class="text-[#4313BD] text-2xl 3xl:text-3xl font-extrabold text-center">FORMULARIO</h2>
+  </header>
+
+  <section id="concurso" data-scroll class="flex flex-col gap-2 px-6 sm:px-16">
+   <h3 class="text-[#4313BD] text-center text-xl 3xl:text-2xl font-extrabold">
+    CONCURSO A PARTICIPAR
+   </h3>
+   <label class="sm:ml-4 text-[#4313BD] text-lg 3xl:text-xl font-bold">
+    Concurso
+   </label>
+
+
+    <select name="concurso" class="sm:w-1/2 px-3 py-1 border-2 border-[#4313BD] text-[#4313BD] text-lg 3xl:text-xl rounded-full" required>
+     <option value="Sexto Concurso de Kahoot">Sexto Concurso de Kahoot</option>
+     <option value="Día de las Matemáticas">Día de las Matemáticas</option>
+    </select>
+
+    
+
+  </section>
+
+  <span class="flex items-center mt-6">
+    <span class="h-0.5 flex-1 bg-[#4313BD]"></span>
+    <span class="text-[#4313BD] text-center text-xl 3xl:text-2xl font-extrabold shrink-0 px-6">
+      EQUIPO
+    </span>
+    <span class="h-0.5 flex-1 bg-[#4313BD]"></span>
+  </span>
+
+
+
+  
+   <label id="equipo" data-scroll class="px-6 sm:px-16 ml-0 text-[#4313BD] text-lg 3xl:text-xl font-bold">
+     NOMBRE DEL EQUIPO
+    </label>
+    <input
+     id="nombreEquipo"
+     data-scroll
+     name="equipo" 
+     class="px-4 ml-5 sm:ml-16 mr-5 sm:mr-16 py-1 border-2 border-[#4313BD] text-[#4313BD] text-lg 3xl:text-xl rounded-full proportional-nums lining-nums"
+     placeholder="Nombre de tu equipo"
+     required
+    />
+
+  <section id="camposEquipo" data-scroll class="flex flex-col sm:grid sm:grid-cols-2 px-6 sm:px-16 gap-9 lining-nums">
+
+   <div class="flex flex-col gap-5">
+
+    <h4 class="text-[#4313BD] text-lg 3xl:text-xl font-bold proportional-nums lining-nums">
+     PARTICIPANTE 1
+    </h4>
+
+    <label class="ml-0 text-[#4313BD] text-lg 3xl:text-xl font-bold">
+     Nombre
+    </label>
+
+    <input
+     name="nombre1" 
+     class="px-4 py-1 border-2 border-[#4313BD] text-[#4313BD] text-lg 3xl:text-xl rounded-2xl"
+     placeholder="Nombre completo"
+     required
+    />
+
+
+    <label class="ml-0 text-[#4313BD] text-lg 3xl:text-xl font-bold">
+     Matrícula
+    </label>
+
+    <input 
+     type="number"
+     name="matricula1"
+     class="px-4 py-1 border-2 border-[#4313BD] text-[#4313BD] text-lg 3xl:text-xl rounded-2xl lining-nums"
+     placeholder="Matricula"
+     min="201000000"
+     max="205000000"
+     required
+     
+    />
+
+    <label class=" ml-0 text-[#4313BD] text-lg 3xl:text-xl font-bold">
+     Carrera
+    </label>
+
+    <select name="carrera1" class="w-full sm:w-10/12 xl:w-1/2 px-3 py-1 border-2 border-[#4313BD] text-[#4313BD] text-lg 3xl:text-xl rounded-2xl">
+     <option value="Ingeniería en Ciencia de Datos">Ingeniería en Ciencia de Datos</option>
+     <option value="Ingeniería en Ciberseguridad">Ingeniería en Ciberseguridad</option>
+     <option value="Ingeniería en Tecnologías de la Información">Ingeniería en Tecnologías de la Información</option>
+     <option value="Ingeniería en Ciencias de la Computación">Ingeniería en Ciencias de la Computación</option>
+     <option value="Licenciatura en Ciencias de la Computación">Licenciatura en Ciencias de la Computación </option>
+    </select>
+
+    
+   </div>
+
+   <div class="flex flex-col gap-5">
+
+    <h4 class="text-[#4313BD] text-lg 3xl:text-xl font-bold proportional-nums lining-nums">
+     PARTICIPANTE 2
+    </h4>
+   
+    <label class="ml-0 text-[#4313BD] text-lg 3xl:text-xl font-bold">
+      Nombre
+     </label>
+ 
+     <input 
+      name="nombre2"
+      class="px-4 py-1 border-2 border-[#4313BD] text-[#4313BD] text-lg 3xl:text-xl rounded-2xl"
+      placeholder="Nombre completo"
+      required
+     />
+ 
+ 
+     <label class="ml-0 text-[#4313BD] text-lg font-bold">
+      Matrícula
+     </label>
+ 
+     <input
+      type="number" 
+      name="matricula2"
+      class="px-4 py-1 border-2 border-[#4313BD] text-[#4313BD] text-lg 3xl:text-xl rounded-2xl lining-nums"
+      placeholder="Matricula"
+      min="201000000"
+      max="205000000"
+      required
+     />
+ 
+     <label class="ml-0 text-[#4313BD] text-lg 3xl:text-xl font-bold">
+      Carrera
+     </label>
+ 
+     <select name="carrera2" class=" w-full sm:w-10/12 xl:w-1/2 px-3 py-1 border-2 border-[#4313BD] text-[#4313BD] text-lg 3xl:text-xl rounded-2xl">
+      <option value="Ingeniería en Ciencia de Datos">Ingeniería en Ciencia de Datos</option>
+      <option value="Ingeniería en Ciberseguridad">Ingeniería en Ciberseguridad</option>
+      <option value="Ingeniería en Tecnologías de la Información">Ingeniería en Tecnologías de la Información</option>
+      <option value="Ingeniería en Ciencias de la Computación">Ingeniería en Ciencias de la Computación</option>
+      <option value="Licenciatura en Ciencias de la Computación">Licenciatura en Ciencias de la Computación </option>
+     </select>
+  
+    
+   </div>
+
+
+   <div class="flex flex-col gap-5">
+
+    <h4 class="text-[#4313BD] text-lg 3xl:text-xl font-bold proportional-nums lining-nums">
+     PARTICIPANTE 3
+    </h4>
+   
+    <label class="ml-0 text-[#4313BD] text-lg font-bold">
+      Nombre
+     </label>
+ 
+     <input 
+      name="nombre3"
+      class="px-4 py-1 border-2 border-[#4313BD] text-[#4313BD] text-lg 3xl:text-xl rounded-2xl"
+      placeholder="Nombre completo"
+     />
+ 
+ 
+     <label class="ml-0 text-[#4313BD] text-lg 3xl:text-xl font-bold">
+      Matrícula
+     </label>
+ 
+     <input 
+      type="number"
+      name="matricula3"
+      class="px-4 py-1 border-2 border-[#4313BD] text-[#4313BD] text-lg 3xl:text-xl rounded-2xl lining-nums"
+      placeholder="Matricula"
+      min="201000000"
+      max="205000000"
+      required
+     />
+ 
+     <label class="ml-0 text-[#4313BD] text-lg 3xl:text-xl font-bold">
+      Carrera
+     </label>
+ 
+     <select name="carrera3" class="w-full sm:w-10/12 xl:w-1/2 px-3 py-1 border-2 border-[#4313BD] text-[#4313BD] text-lg 3xl:text-xl rounded-2xl">
+      <option value="Ingeniería en Ciencia de Datos">Ingeniería en Ciencia de Datos</option>
+      <option value="Ingeniería en Ciberseguridad">Ingeniería en Ciberseguridad</option>
+      <option value="Ingeniería en Tecnologías de la Información">Ingeniería en Tecnologías de la Información</option>
+      <option value="Ingeniería en Ciencias de la Computación">Ingeniería en Ciencias de la Computación</option>
+      <option value="Licenciatura en Ciencias de la Computación">Licenciatura en Ciencias de la Computación </option>
+     </select>
+  
+    
+   </div>
+
+
+  </section>
+
+
+
+  <footer class="inline-flex justify-center mb-12">
+   <button class="w-11/12 py-3 mt-4 bg-[#4313BD] text-white text-2xl 3xl:text-3xl font-semibold rounded-3xl">
+    INSCRIBIRSE
+   </button>
+
+  </footer>
+
+</form>
+
+<img src="señorita.png" class="hidden sm:block absolute right-0"/>
+</section>
+
+
+<script>
+
+document.getElementById('formulario').addEventListener('submit', async (event) => {
+event.preventDefault(); // Evita el envío del formulario
+
+// Extraemos los datos del formulario
+const formData = new FormData(event.target);
+const datos = { 
+ "concurso": formData.get('concurso'),
+ "equipo": { 
+   "nombre":formData.get('equipo'),
+   "estudiante1":{
+    "nombre": formData.get('nombre1'),
+    "matricula": formData.get('matricula1'),
+    "carrera": formData.get('carrera1')
+    
+   },
+
+   "estudiante2":{
+    "nombre": formData.get('nombre2'),
+    "matricula": formData.get('matricula2'),
+    "carrera": formData.get('carrera2')
+    
+   },
+   "estudiante3":{
+    "nombre": formData.get('nombre3'),
+    "matricula": formData.get('matricula3'),
+    "carrera": formData.get('carrera3'),
+    
+   },
+  }
+};
+
+ console.log('Nombre: '+datos.equipo.nombre);
+ console.log('Matricula: '+datos.concurso);
+ console.log('Carrera: '+datos.equipo.estudiante1.carrera);
+
+ try {
+ const respuesta = await fetch('https://atm2rw43aiseygmeenomn33c2y0icwrm.lambda-url.us-east-2.on.aws/', {
+   method: 'POST',
+   headers: {
+     'Content-Type': 'application/json'
+   },
+   body: JSON.stringify(datos)
+ });
+
+ if (!respuesta.ok) {
+   throw new Error(`Error en la solicitud: ${respuesta.statusText}`);
+ }
+ alert('Datos enviados exitosamente');
+
+} catch (error) {
+ console.error('Error al enviar datos:', error);
+ alert('Hubo un error al enviar los datos');
+}
+
+});
+</script>

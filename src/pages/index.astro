@@ -1,0 +1,46 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Hero from '../components/Hero.astro';
+import Objetivo from '../components/Objetivo.astro';
+import ProximosConcursos from '../components/ProximosConcursos.astro';
+import Formulario from '../components/Formulario.astro';
+import Concursos from '../components/Concursos.astro';
+import Premiacion from '../components/Premiacion.astro';
+import Comite from '../components/Comite.astro';
+import Kahoot from '../components/Kahoot.astro';
+import Footer from '../components/Footer.astro'
+import { RelojMatematicas } from '../components/RelojMatematicas';
+---
+
+<Layout title="Kahoot">
+
+
+ <main class="w-full">
+  <div class="flex h-60 flex-wrap gap-4">
+    <div class="divider divider-horizontal">Text</div>
+    <div class="divider divider-horizontal"><span class="flex items-center justify-center"><span class="icon-[tabler--sun] size-5"></span></span> </div>
+  </div>
+  <Hero/>
+  <Objetivo/>
+  <ProximosConcursos/>
+  <Formulario/>
+  <Concursos/>
+  <Premiacion/>
+  <Comite/>
+  <Kahoot/>
+  <Footer/>
+
+  <script>
+    import ScrollOut from "scroll-out";
+
+ScrollOut({
+  /* options */
+});
+
+
+  </script>
+
+ </main>
+
+
+</Layout>
