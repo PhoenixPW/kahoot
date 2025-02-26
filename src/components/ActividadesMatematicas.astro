@@ -1,0 +1,65 @@
+---
+ var listaImagenes = ["Torre de Hanoi y Torre de Stockmeyer",
+                      "Azulejos",
+                      "El problema de la galería de arte y la fortaleza",
+                      "Azulejos artísticos",
+                      "Poliedros artísticos",
+                      "Las matemáticas de los eclipses",
+                      "Baile caótico",
+                      "Actividades Ponenciales",
+                      "Búsqueda del tesoro de matemáticas",
+                      "Agujas de Buffon"
+ ]
+---
+
+  <section data-scroll class=" flex flex-col w-full bg-gradient-to-br from-[#1618DF] to-[#041173] sm:min-h-screen sm:justify-center items-center pt-10 sm:pb-28 font-syne overflow-hidden">
+   <h2 class="px-10 py-5 mb-8 bg-white text-center text-[#1618DF] text-base lg:text-xl xl:text-2xl 3xl:text-3xl font-extrabold rounded-xl">
+    COSAS QUE HACER EN EL DÍA DE LAS MATEMÁTICAS
+   </h2>
+
+   <article class="swiper3 overflow-hidden sm:mt-10 rounded-xl">
+    <div class="swiper-wrapper">
+
+
+      {
+       
+       listaImagenes.map((titulo,indice) =>
+       (
+        <div class="swiper-slide overflow-hidden rounded-xl">
+             <article class="flex flex-col h-96 3xl:h-[45dvh] rounded-xl">
+              <h3 class="px-3 py-4 text-center bg-white text-[#1618DF] text-base 3xl:text-xl font-bold uppercase rounded-t-xl">{titulo}</h3>
+              <img src={"actividad"+(indice+1)+".png"} class=" h-full rounded-b-xl" />
+             </article>
+       </div>
+        )
+       )
+      }
+    
+    </div>
+   </article>
+
+  </section>
+
+  <script>
+   import Swiper from 'swiper';
+   import 'swiper/css';
+   import 'swiper/css/navigation'
+   import 'swiper/css/effect-cards'
+   
+   import { Autoplay ,Scrollbar ,Navigation, EffectCards } from 'swiper/modules';
+
+   const swiper = new Swiper('.swiper3', {
+    spaceBetween:30,
+    loop:true,
+    speed:6500,
+    autoplay:{
+     delay: 0,
+    },
+    grabCursor: true,
+    slidesPerView: "auto",
+    freeMode: true,
+    modules:[Autoplay ,Scrollbar, Navigation, EffectCards],
+
+    
+   })
+  </script>

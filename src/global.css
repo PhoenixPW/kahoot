@@ -31,10 +31,43 @@
   background-size: 55px 55px;
 }
 
+details::details-content {
+  block-size: 0;
+  transition: block-size 1s;
+}
+
+details summary::after{
+ content:url("/plus.svg");
+}
+
+details[open]::details-content {
+ block-size: auto;
+}
+
+details[open] summary::after {
+  content: url("/minus.svg");
+  color: blue;
+  
+}
+
 
 .swiper {
   background: transparent !important;
 }
+
+.swiper3 .swiper-wrapper{
+  transtion-timing-function: linear !important;
+ }
+ 
+ .swiper3 .swiper-slide {
+   width: 22% !important;
+   
+ }
+ 
+ .swiper3 .swiper-slide img{
+   object-fit: cover !important;
+ }
+ 
 
 /* Aplica el fondo semitransparente solo a las tarjetas que no están en el centro */
 .swiper-slide img{

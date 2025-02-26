@@ -9,7 +9,7 @@ export const Reloj = ({versionMovil}) => {
 
     const calcularTiempoRestante = () => {
      const fechaActual = new Date();
-     const fechaConcurso = new Date('2024-11-13T12:00:00');
+     const fechaConcurso = new Date('2025-03-12T11:00:00');
 
      // Calcular la diferencia en milisegundos
      const diferenciaEnMs = fechaConcurso - fechaActual;
@@ -36,7 +36,7 @@ export const Reloj = ({versionMovil}) => {
 
     return(
      <>
-      <article class={`w-full ${versionMovil?"flex sm:hidden":"hidden sm:flex"} flex-col gap-16 h-full justify-center items-center py-8 bg-[#4313BD] text-center text-xl rounded-b-lg sm:rounded-bl-lg `}>
+      <article class={`w-full ${versionMovil?"flex sm:hidden":"hidden sm:flex"} flex-col gap-16 h-full justify-center items-center py-8 bg-[#1618DF] text-center text-xl rounded-b-lg sm:rounded-bl-lg `}>
  
        <div class="text-white">
  

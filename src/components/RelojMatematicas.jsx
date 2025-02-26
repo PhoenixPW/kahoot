@@ -9,7 +9,7 @@ export const RelojMatematicas = () => {
 
     const calcularTiempoRestante = () => {
      const fechaActual = new Date();
-     const fechaConcurso = new Date('2025-03-14T00:00:00');
+     const fechaConcurso = new Date('2025-11-01T00:00:00');
 
      // Calcular la diferencia en milisegundos
      const diferenciaEnMs = fechaConcurso - fechaActual;
