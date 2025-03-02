@@ -56,13 +56,31 @@ details[open] summary::after {
 }
 
 .swiper3 .swiper-wrapper{
-  transtion-timing-function: linear !important;
+  transition-timing-function: linear !important;
+ }
+
+.swiper4 .swiper-wrapper{
+  transition-timing-function: linear !important;
  }
  
+
  .swiper3 .swiper-slide {
    width: 22% !important;
    
  }
+
+ .swiper4 .swiper-slide {
+  width: 70% !important;
+  
+}
+
+@media (max-width:550px)
+{
+ .swiper4 .swiper-slide{
+  width: 45% !important;
+ }
+}
+
  
  .swiper3 .swiper-slide img{
    object-fit: cover !important;

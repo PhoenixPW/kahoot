@@ -1,0 +1,55 @@
+---
+ var listaImagenes = new Array(13).fill("slider");
+---
+
+  <section data-scroll class="z-10 flex flex-col w-full sm:min-h-screen sm:justify-center items-center pt-10 sm:pb-28 font-syne">
+
+   <article class="swiper w-11/12 2xl:w-9/12 h-[40vh] sm:h-[80vh] 2xl:h-[80vh] sm:mt-10 rounded-xl">
+    <div class="swiper-wrapper">
+
+
+      {
+       
+       listaImagenes.map((valor,indice) =>
+       (
+        <div class="swiper-slide">
+
+        <div class="flex justify-center h-full">
+          <div class="relative">
+             <img src={"slider"+(indice+1)+".jpg"} class="object-contain h-full w-auto rounded-xl" />
+             <div class="absolute inset-0 bg-gray-800 opacity-50 flex items-center justify-center rounded-xl">
+             </div>
+          </div>
+       </div>
+        
+       </div>
+        )
+       )
+      }
+    
+    </div>
+   </article>
+
+  </section>
+
+  <script>
+   import Swiper from 'swiper';
+   import 'swiper/css';
+   import 'swiper/css/navigation'
+   import 'swiper/css/effect-cards'
+   
+   import { Autoplay ,Scrollbar ,Navigation, EffectCards } from 'swiper/modules';
+
+   const swiper = new Swiper('.swiper', {
+    effect: "cards",
+    autoplay:{
+     delay: 2000,
+    },
+    grabCursor: true,
+    slidesPerView: "auto",
+    modules:[Autoplay ,Scrollbar, Navigation, EffectCards],
+    cardsEffect:{
+     slideShadows:false
+    }
+   })
+  </script>

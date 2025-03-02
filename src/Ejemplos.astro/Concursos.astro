@@ -1,0 +1,772 @@
+---
+
+---
+<script type="module">
+    window.modificarSlide = function(numeroSlide) {
+    const ganadores = document.getElementById("g"+numeroSlide);
+    const banner = document.getElementById("b"+numeroSlide);
+    const mas = document.getElementById("mas"+numeroSlide);
+    const menos = document.getElementById("menos"+numeroSlide);
+
+
+if(ganadores.classList.contains("hidden"))
+{
+ banner.classList.remove("sm:w-6/12", "lg:w-7/12","object-contain", "h-full");
+ ganadores.classList.remove("hidden");
+ menos.classList.remove("hidden");
+
+ banner.classList.add("sm:w-0","lg:w-2/12" ,"object-cover", "h-0");
+ ganadores.classList.add("flex");
+ mas.classList.add("hidden");
+}
+else
+{
+ banner.classList.remove("sm:w-0", "lg:w-2/12", "object-cover","h-0");
+ ganadores.classList.remove("flex");
+ mas.classList.remove("hidden");
+
+ banner.classList.add("sm:w-6/12","lg:w-7/12","object-contain","h-full");
+ ganadores.classList.add("hidden");
+ menos.classList.add("hidden");
+
+
+}
+
+
+  }
+</script>
+
+<section class="relative overflow-x-hidden flex flex-col min-h-screen justify-center items-center py-28 bg-[#E0E1FF] font-syne">
+   <div class="absolute top-0 grid-concursos w-full h-full opacity-30"></div>
+    <h2 data-scroll class="z-10 w-9/12 sm:w-1/2 bg-[#4313BD] py-4 text-[#00FFFF] text-center text-lg  sm:text-3xl font-extrabold rounded-xl">
+     CONCURSOS ANTERIORES
+    </h2>
+
+    <article data-scroll class="swiper2 w-11/12 xl:w-[72%] sm:h-[85vh] mt-10 rounded-xl">
+      <div class="swiper-wrapper ">
+      
+
+        <!--Concurso 2018 -->
+      <article id="slide1" class="swiper-slide bg-white rounded-xl blur-sm">
+       <div class="w-full flex flex-col sm:flex-row  h-full rounded-xl">
+        
+        <section class="relative rounded-l-xl sm:w-6/12 lg:w-5/12 flex flex-col gap-3 justify-start items-start pt-6 pb-6 sm:pb-0 sm:pt-16  pl-10 pr-8 bg-[#4313BD] text-white lining-nums">
+         <div class="flex flex-col gap-1 sm:gap-3">
+          <h3 class="sm:mb-3 text-lg sm:text-xl lg:text-lg xl:text-2xl font-extrabold">
+            CONCURSO 2018
+
+          </h3>
+
+          <div class="flex flex-col gap-2">
+
+           <p class="text-sm lg:text-sm xl:text-lg font-bold">RONDA 1</p>
+
+           <ul class="list-disc ml-6 text-sm lg:text-xs xl:text-[1.02rem]">
+            <li>FUNCIÓN</li>
+            <li>LÍMITE DE UNA FUNCIÓN</li>
+            <li>LEYES DE LOS LIMITES</li>
+            <li>CONTINUIDAD</li>
+           </ul>
+          </div>
+
+          <div class="flex flex-col gap-2 my-2">
+           <p class="text-sm lg:text-sm xl:text-lg font-bold">RONDA 2</p>
+
+           <ul class="list-disc ml-6 text-sm lg:text-xs xl:text-[1.02rem]">
+            <li>REGLAS DE DERIVACIÓN</li>
+            <li>REGLAS DEL PRODUCTO Y EL COCIENTE</li>
+            <li>LA REGLA DE LA CADENA</li>
+           </ul>
+          </div>
+
+          <div class="flex flex-col gap-2">
+           <p class="text-sm lg:text-sm xl:text-lg font-bold">RONDA 3</p>
+
+           <ul class="list-disc ml-6 text-sm lg:text-xs xl:text-[1.02rem]">
+            <li>DERIVACIÓN IMPLÍCITA</li>
+            <li>NÚMEROS CRÍTICOS DE UNA FUNCIÓN</li>
+            <li>VALORES MÁXIMOS Y MÍNIMOS DE UNA FUNCIÓN</li>
+            <li>CONCAVIDAD</li>
+           </ul>
+
+          </div>
+         </div>
+
+         <button onclick="modificarSlide(1)" class="sm:desktop z-10 absolute bottom-0 left-1/2 sm:left-auto sm:bottom-auto -translate-x-1/2 sm:-translate-x-0 translate-y-1/2 sm:-right-8 sm:top-1/2 transform sm:-translate-y-1/2 text-white bg-transparent "><p class="bg-[#8F32E0] w-11 sm:w-16 h-11 sm:h-16 text-7xl text-center pb-10  rounded-full">
+
+          <svg id="mas1" class="w-[44px] sm:w-[62px] h-[44px] sm:h-[62px]" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <mask id="mask0_289_91" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+            <rect width="24" height="24" fill="#D9D9D9"/>
+            </mask>
+            <g mask="url(#mask0_289_91)">
+            <path d="M11 13H5V11H11V5H13V11H19V13H13V19H11V13Z" fill="white"/>
+            </g>
+            </svg>
+
+            <svg id="menos1" class="hidden w-[44px] sm:w-[62px] h-[44px] sm:h-[62px]" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <mask id="mask0_289_101" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+              <rect width="24" height="24" fill="#D9D9D9"/>
+              </mask>
+              <g mask="url(#mask0_289_101)">
+              <path d="M5 13V11H19V13H5Z" fill="white"/>
+              </g>
+              </svg>
+                          
+    
+          </p></button>
+
+
+        </section>
+
+        <section id="g1" class="sm:w-6/12 lg:w-5/12 hidden flex-col gap-1 justify-start items-start pt-6 pb-6 sm:pb-0 sm:pt-16 pl-10 pr-8 bg-[#00FFFF] text-[#4313BD] lining-nums">
+          <h3 class="mb-2 sm:mb-5 text-lg sm:text-2xl font-extrabold">GANADORES</h3>
+
+          <div class="flex flex-col gap-1">
+           <h4 class="text-xs sm:text-sm font-bold">PRIMER LUGAR</h4>
+           <p class="text-base sm:text-lg font-bold">EQUIPO BTS</p>
+ 
+           <ul class="list-disc ml-6 text-sm lg:text-xs xl:text-[1.02rem]">
+            <li>BRYAN VIOLANTE ARRIAGA</li>
+            <li>CARLOS EFRAÍN BRAVO SÁNCHEZ</li>
+            <li>DANIEL DÍAZ OZUNA</li>
+           </ul>
+          </div>
+
+          <div class="flex flex-col gap-1 my-6">
+           <h4 class="text-sm font-bold">SEGUNDO LUGAR</h4>
+           <p class="text-xs sm:text-lg font-bold">EQUIPO AJS</p>
+ 
+           <ul class="list-disc ml-6 text-sm lg:text-xs xl:text-[1.02rem]">
+            <li>
+                JONATHAN DE LA CRUZ HUERTA                
+              </li>
+               <li>
+                INÉS YAELIN ROJAS HUERTA
+              </li>
+               <li>
+                BELÉN VALERIO VARGAS
+
+               </li>
+         </ul>
+          </div>
+
+          <div class="flex flex-col gap-1">
+           <h4 class="text-sm font-bold">TERCER LUGAR</h4>
+           <p class="text-xs sm:text-lg font-bold">EQUIPO TOCINO</p>
+ 
+           <ul class="list-disc ml-6 text-sm lg:text-xs xl:text-[1.02rem]">
+            <li>DIEGO QUINTANA HERNÁNDEZ</li>
+            <li>JOSÉ M. NAVARRETE FUENTES.</li>
+        </ul>
+          </div>
+  
+        </section>
+
+        <img id="b1" 
+             src="2018.jpg" 
+             class="transition-all rounded-r-xl object-contain sm:w-6/12 lg:w-7/12 h-full sm:h-full"/>
+       <div>
+      </article>
+
+
+
+        <!--Concurso 2019 -->
+        <article id="slide2" class="swiper-slide bg-white rounded-xl blur-sm">
+          <div class="w-full flex flex-col sm:flex-row  h-full rounded-xl">
+           
+        <section class="relative rounded-l-xl sm:w-6/12 lg:w-5/12 flex flex-col gap-3 justify-start items-start pt-6 pb-6 sm:pb-0 sm:pt-16  pl-10 pr-8 bg-[#4313BD] text-white lining-nums">
+            <div class="flex flex-col gap-1 sm:gap-3">
+             <h3 class="sm:mb-3 text-lg sm:text-xl lg:text-lg xl:text-2xl font-extrabold">CONCURSO 2019</h3>
+   
+             <div class="flex flex-col gap-2">
+   
+              <p class="text-sm lg:text-sm xl:text-lg font-bold">RONDA 1</p>
+   
+              <ul class="list-disc ml-6 text-sm lg:text-xs xl:text-[1.02rem]">
+                <li>MATRICES</li>
+              </ul>
+             </div>
+   
+             <div class="flex flex-col gap-2 my-2">
+              <p class="text-sm lg:text-sm xl:text-lg font-bold">RONDA 2</p>
+   
+              <ul class="list-disc ml-6 text-sm lg:text-xs xl:text-[1.02rem]">
+                <li>DETERMINANTES</li>
+              </ul>
+             </div>
+   
+             <div class="flex flex-col gap-2">
+              <p class="text-sm lg:text-sm xl:text-lg font-bold">RONDA 3</p>
+   
+              <ul class="list-disc ml-6 text-sm lg:text-xs xl:text-[1.02rem]">
+                <li>NUMEROS COMPLEJOS</li>
+              </ul>
+   
+             </div>
+            </div>
+
+            <button onclick="modificarSlide(2)" class="sm:desktop z-10 absolute bottom-0 left-1/2 sm:left-auto sm:bottom-auto -translate-x-1/2 sm:-translate-x-0 translate-y-1/2 sm:-right-8 sm:top-1/2 transform sm:-translate-y-1/2 text-white bg-transparent "><p class="bg-[#8F32E0] w-11 sm:w-16 h-11 sm:h-16 text-7xl text-center pb-10  rounded-full">
+
+              <svg id="mas2" class="w-[44px] sm:w-[62px] h-[44px] sm:h-[62px]" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <mask id="mask0_289_91" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+                <rect width="24" height="24" fill="#D9D9D9"/>
+                </mask>
+                <g mask="url(#mask0_289_91)">
+                <path d="M11 13H5V11H11V5H13V11H19V13H13V19H11V13Z" fill="white"/>
+                </g>
+                </svg>
+    
+                <svg id="menos2" class="hidden w-[44px] sm:w-[62px] h-[44px] sm:h-[62px]" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <mask id="mask0_289_101" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+                  <rect width="24" height="24" fill="#D9D9D9"/>
+                  </mask>
+                  <g mask="url(#mask0_289_101)">
+                  <path d="M5 13V11H19V13H5Z" fill="white"/>
+                  </g>
+                  </svg>
+                              
+        
+              </p></button>
+                
+           </section>
+   
+        <section id="g2" class="sm:w-6/12 lg:w-5/12 hidden flex-col gap-1 justify-start items-start pt-6 pb-6 sm:pb-0 sm:pt-16 pl-10 pr-8 bg-[#00FFFF] text-[#4313BD] lining-nums">
+             <h3 class="mb-2 sm:mb-5 text-lg sm:text-2xl font-extrabold">GANADORES</h3>
+   
+             <div class="flex flex-col gap-1">
+              <h4 class="text-xs sm:text-sm font-bold">PRIMER LUGAR</h4>
+              <p class="text-base sm:text-lg font-bold">EQUIPO BTS</p>
+    
+              <ul class="list-disc ml-6 text-sm lg:text-xs xl:text-[1.02rem]">
+                <li>JAVIER HERNÁNDEZ MARTÍNEZ</li>
+               <li>ISAAC DAVID GÓMEZ HERNÁNDEZ</li>
+               <li>ORLANDO CERVANTES VALDEZ</li>
+              </ul>
+             </div>
+   
+             <div class="flex flex-col gap-1 my-6">
+              <h4 class="text-sm font-bold">SEGUNDO LUGAR</h4>
+              <p class="text-xs sm:text-lg font-bold">DESCONOCIDO</p>
+    
+             </div>
+   
+             <div class="flex flex-col gap-1">
+              <h4 class="text-sm font-bold">TERCER LUGAR</h4>
+              <p class="text-xs sm:text-lg font-bold">DESCONOCIDO</p>
+    
+             </div>
+     
+           </section>
+   
+           <img id="b2" 
+             src="2019.jpg" 
+             class="transition-all rounded-r-xl object-contain sm:w-6/12 lg:w-7/12 h-full sm:h-full"/>
+          <div>
+         </article>
+
+         
+        <!--Concurso 2021 -->
+        <article id="slide3" class="swiper-slide bg-white rounded-xl blur-sm">
+          <div class="w-full flex flex-col sm:flex-row  h-full rounded-xl">
+           
+        <section class="relative rounded-l-xl sm:w-6/12 lg:w-5/12 flex flex-col gap-3 justify-start items-start pt-6 pb-6 sm:pb-0 sm:pt-16  pl-10 pr-8 bg-[#4313BD] text-white lining-nums">
+            <div class="flex flex-col gap-1 sm:gap-3">
+             <h3 class="sm:mb-3 text-lg sm:text-xl lg:text-lg xl:text-2xl font-extrabold">CONCURSO 2021</h3>
+   
+             <div class="flex flex-col gap-2">
+   
+              <p class="text-sm lg:text-sm xl:text-lg font-bold">RONDA 1</p>
+   
+              <ul class="list-disc ml-6 text-sm lg:text-xs xl:text-[1.02rem]">
+                <li>MATRICES</li>
+               <li>DETERMINANTES</li>
+               <li>SISTEMAS DE ECUACIONES LINEALES</li>
+               <li>NÚMEROS COMPLEJOS</li>
+               <li>POLINOMIOS</li>
+              </ul>
+             </div>
+   
+             <div class="flex flex-col gap-2 my-2">
+              <p class="text-sm lg:text-sm xl:text-lg font-bold">RONDA 2</p>
+   
+              <ul class="list-disc ml-6 text-sm lg:text-xs xl:text-[1.02rem]">
+                <li>MATRICES</li>
+                <li>DETERMINANTES</li>
+                <li>SISTEMAS DE ECUACIONES LINEALES</li>
+                <li>NÚMEROS COMPLEJOS</li>
+                <li>POLINOMIOS</li>
+               </ul>
+             </div>
+   
+             <div class="flex flex-col gap-2">
+              <p class="text-sm lg:text-sm xl:text-lg font-bold">RONDA 3</p>
+   
+              <ul class="list-disc ml-6 text-sm lg:text-xs xl:text-[1.02rem]">
+                <li>MATRICES</li>
+                <li>DETERMINANTES</li>
+                <li>SISTEMAS DE ECUACIONES LINEALES</li>
+                <li>NÚMEROS COMPLEJOS</li>
+                <li>POLINOMIOS</li>
+               </ul>
+   
+             </div>
+            </div>
+
+            <button onclick="modificarSlide(3)" class="sm:desktop z-10 absolute bottom-0 left-1/2 sm:left-auto sm:bottom-auto -translate-x-1/2 sm:-translate-x-0 translate-y-1/2 sm:-right-8 sm:top-1/2 transform sm:-translate-y-1/2 text-white bg-transparent "><p class="bg-[#8F32E0] w-11 sm:w-16 h-11 sm:h-16 text-7xl text-center pb-10  rounded-full">
+
+              <svg id="mas3" class="w-[44px] sm:w-[62px] h-[44px] sm:h-[62px]" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <mask id="mask0_289_91" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+                <rect width="24" height="24" fill="#D9D9D9"/>
+                </mask>
+                <g mask="url(#mask0_289_91)">
+                <path d="M11 13H5V11H11V5H13V11H19V13H13V19H11V13Z" fill="white"/>
+                </g>
+                </svg>
+    
+                <svg id="menos3" class="hidden w-[44px] sm:w-[62px] h-[44px] sm:h-[62px]" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <mask id="mask0_289_101" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+                  <rect width="24" height="24" fill="#D9D9D9"/>
+                  </mask>
+                  <g mask="url(#mask0_289_101)">
+                  <path d="M5 13V11H19V13H5Z" fill="white"/>
+                  </g>
+                  </svg>
+                              
+        
+              </p></button>
+                
+           </section>
+   
+        <section id="g3" class="sm:w-6/12 lg:w-5/12 hidden flex-col gap-1 justify-start items-start pt-6 pb-6 sm:pb-0 sm:pt-16 pl-10 pr-8 bg-[#00FFFF] text-[#4313BD] lining-nums">
+             <h3 class="mb-2 sm:mb-5 text-lg sm:text-2xl font-extrabold">GANADORES</h3>
+   
+             <div class="flex flex-col gap-1">
+              <h4 class="text-xs sm:text-sm font-bold">PRIMER LUGAR</h4>
+              <p class="text-base sm:text-lg font-bold"></p>
+    
+              <ul class="list-disc ml-6 text-sm sm:text-[1.02rem]">
+               <li>EDUARDO CHÁVEZ BARRETO</li>
+              </ul>
+             </div>
+   
+             <div class="flex flex-col gap-1 my-6">
+              <h4 class="text-sm font-bold">SEGUNDO LUGAR</h4>
+              <p class="text-xs sm:text-lg font-bold"></p>
+    
+              <ul class="list-disc ml-6 text-sm lg:text-xs xl:text-[1.02rem]">
+                <li>ELTHON JOHN QUINTOS ESPINOZA</li>
+              </ul>
+             </div>
+   
+             <div class="flex flex-col gap-1">
+              <h4 class="text-sm font-bold">TERCER LUGAR</h4>
+              <p class="text-xs sm:text-lg font-bold"></p>
+    
+              <ul class="list-disc ml-6 text-sm lg:text-xs xl:text-[1.02rem]">
+                <li>OSVALDO MOLINA CAZARES</li>
+              </ul>
+             </div>
+     
+           </section>
+   
+           <img id="b3" 
+                src="2021.jpg" 
+                class="transition-all rounded-r-xl object-contain sm:w-6/12 lg:w-7/12 h-full sm:h-full"/>
+          <div>
+         </article>
+
+         
+        <!--Concurso 2022 -->
+        <article id="slide4" class="swiper-slide bg-white rounded-xl blur-sm">
+          <div class="w-full flex flex-col sm:flex-row  h-full rounded-xl">
+           
+        <section class="relative rounded-l-xl sm:w-6/12 lg:w-5/12 flex flex-col gap-3 justify-start items-start pt-6 pb-6 sm:pb-0 sm:pt-16  pl-10 pr-8 bg-[#4313BD] text-white lining-nums">
+            <div class="flex flex-col gap-1 sm:gap-3">
+             <h3 class="sm:mb-3 text-lg sm:text-xl lg:text-lg xl:text-2xl font-extrabold">CONCURSO 2022</h3>
+   
+             <div class="flex flex-col gap-2">
+   
+              <p class="text-sm lg:text-sm xl:text-lg font-bold">RONDA 1</p>
+   
+              <ul class="list-disc ml-6 text-sm lg:text-xs xl:text-[1.02rem]">
+                <li>MATRICES</li>
+                <li>DETERMINANTES</li>
+                <li>SISTEMAS DE ECUACIONES LINEALES</li>
+                <li>NÚMEROS COMPLEJOS</li>
+                <li>POLINOMIOS</li>
+               </ul>
+             </div>
+   
+             <div class="flex flex-col gap-2 my-2">
+              <p class="text-sm lg:text-sm xl:text-lg font-bold">RONDA 2</p>
+   
+              <ul class="list-disc ml-6 text-sm lg:text-xs xl:text-[1.02rem]">
+                <li>MATRICES</li>
+                <li>DETERMINANTES</li>
+                <li>SISTEMAS DE ECUACIONES LINEALES</li>
+                <li>NÚMEROS COMPLEJOS</li>
+                <li>POLINOMIOS</li>
+               </ul>
+             </div>
+   
+             <div class="flex flex-col gap-2">
+              <p class="text-sm lg:text-sm xl:text-lg font-bold">RONDA 3</p>
+   
+              <ul class="list-disc ml-6 text-sm lg:text-xs xl:text-[1.02rem]">
+                <li>MATRICES</li>
+               <li>DETERMINANTES</li>
+               <li>SISTEMAS DE ECUACIONES LINEALES</li>
+               <li>NÚMEROS COMPLEJOS</li>
+               <li>POLINOMIOS</li>
+              </ul>
+   
+             </div>
+            </div>
+
+            <button onclick="modificarSlide(4)" class="sm:desktop z-10 absolute bottom-0 left-1/2 sm:left-auto sm:bottom-auto -translate-x-1/2 sm:-translate-x-0 translate-y-1/2 sm:-right-8 sm:top-1/2 transform sm:-translate-y-1/2 text-white bg-transparent "><p class="bg-[#8F32E0] w-11 sm:w-16 h-11 sm:h-16 text-7xl text-center pb-10  rounded-full">
+
+              <svg id="mas4" class="w-[44px] sm:w-[62px] h-[44px] sm:h-[62px]" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <mask id="mask0_289_91" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+                <rect width="24" height="24" fill="#D9D9D9"/>
+                </mask>
+                <g mask="url(#mask0_289_91)">
+                <path d="M11 13H5V11H11V5H13V11H19V13H13V19H11V13Z" fill="white"/>
+                </g>
+                </svg>
+    
+                <svg id="menos4" class="hidden w-[44px] sm:w-[62px] h-[44px] sm:h-[62px]" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <mask id="mask0_289_101" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+                  <rect width="24" height="24" fill="#D9D9D9"/>
+                  </mask>
+                  <g mask="url(#mask0_289_101)">
+                  <path d="M5 13V11H19V13H5Z" fill="white"/>
+                  </g>
+                  </svg>
+                              
+        
+              </p></button>
+                
+           </section>
+   
+        <section id="g4" class="sm:w-6/12 lg:w-5/12 hidden flex-col gap-1 justify-start items-start pt-6 pb-6 sm:pb-0 sm:pt-16 pl-10 pr-8 bg-[#00FFFF] text-[#4313BD] lining-nums">
+             <h3 class="mb-2 sm:mb-5 text-lg sm:text-2xl font-extrabold">GANADORES</h3>
+   
+             <div class="flex flex-col gap-1">
+              <h4 class="text-xs sm:text-sm font-bold">PRIMER LUGAR</h4>
+              <p class="text-base sm:text-lg font-bold"></p>
+    
+              <ul class="list-disc ml-6 text-sm lg:text-xs xl:text-[1.02rem]">
+                <li>GUADALUPE ALONDRA GUTIÉRREZ PAZ</li>
+              </ul>
+             </div>
+   
+             <div class="flex flex-col gap-1 my-6">
+              <h4 class="text-sm font-bold">SEGUNDO LUGAR</h4>
+              <p class="text-xs sm:text-lg font-bold"></p>
+    
+              <ul class="list-disc ml-6 text-sm lg:text-xs xl:text-[1.02rem]">
+                <li>AMAURY MISAEL DURÁN GONZÁLEZ</li>
+              </ul>
+             </div>
+   
+             <div class="flex flex-col gap-1">
+              <h4 class="text-sm font-bold">TERCER LUGAR</h4>
+              <p class="text-xs sm:text-lg font-bold"></p>
+    
+              <ul class="list-disc ml-6 text-sm lg:text-xs xl:text-[1.02rem]">
+                <li>ARTURO LÓPEZ LEÓN</li>
+              </ul>
+             </div>
+     
+           </section>
+   
+           <img id="b4" 
+                src="2022.jpg" 
+                class="transition-all rounded-r-xl object-contain sm:w-6/12 lg:w-7/12 h-full sm:h-full"/>
+          <div>
+         </article>
+
+         
+        <!--Concurso 2023 -->
+        <article id="slide5" class="swiper-slide bg-white rounded-xl blur-sm">
+          <div class="w-full flex flex-col sm:flex-row  h-full rounded-xl">
+           
+        <section class="relative rounded-l-xl sm:w-6/12 lg:w-5/12 flex flex-col gap-3 justify-start items-start pt-6 pb-6 sm:pb-0 sm:pt-16  pl-10 pr-8 bg-[#4313BD] text-white lining-nums">
+            <div class="flex flex-col gap-1 sm:gap-3">
+             <h3 class="sm:mb-3 text-lg sm:text-xl lg:text-lg xl:text-2xl font-extrabold">CONCURSO 2023</h3>
+   
+             <div class="flex flex-col gap-2">
+   
+              <p class="text-sm lg:text-sm xl:text-lg font-bold">RONDA 1</p>
+   
+              <ul class="list-disc ml-6 text-sm lg:text-xs xl:text-[1.02rem]">
+                <li>MATRICES</li>
+               <li>DETERMINANTES</li>
+               <li>SISTEMAS DE ECUACIONES LINEALES</li>
+               <li>NÚMEROS COMPLEJOS</li>
+               <li>POLINOMIOS</li>
+              </ul>
+             </div>
+   
+             <div class="flex flex-col gap-2 my-2">
+              <p class="text-sm lg:text-sm xl:text-lg font-bold">RONDA 2</p>
+   
+              <ul class="list-disc ml-6 text-sm lg:text-xs xl:text-[1.02rem]">
+                <li>MATRICES</li>
+               <li>DETERMINANTES</li>
+               <li>SISTEMAS DE ECUACIONES LINEALES</li>
+               <li>NÚMEROS COMPLEJOS</li>
+               <li>POLINOMIOS</li>
+              </ul>
+             </div>
+   
+             <div class="flex flex-col gap-2">
+              <p class="text-sm lg:text-sm xl:text-lg font-bold">RONDA 3</p>
+   
+              <ul class="list-disc ml-6 text-sm lg:text-xs xl:text-[1.02rem]">
+                <li>MATRICES</li>
+               <li>DETERMINANTES</li>
+               <li>SISTEMAS DE ECUACIONES LINEALES</li>
+               <li>NÚMEROS COMPLEJOS</li>
+               <li>POLINOMIOS</li>
+              </ul>
+   
+             </div>
+            </div>
+            
+            <button onclick="modificarSlide(5)" class="sm:desktop z-10 absolute bottom-0 left-1/2 sm:left-auto sm:bottom-auto -translate-x-1/2 sm:-translate-x-0 translate-y-1/2 sm:-right-8 sm:top-1/2 transform sm:-translate-y-1/2 text-white bg-transparent "><p class="bg-[#8F32E0] w-11 sm:w-16 h-11 sm:h-16 text-7xl text-center pb-10  rounded-full">
+
+              <svg id="mas5" class="w-[44px] sm:w-[62px] h-[44px] sm:h-[62px]" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <mask id="mask0_289_91" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+                <rect width="24" height="24" fill="#D9D9D9"/>
+                </mask>
+                <g mask="url(#mask0_289_91)">
+                <path d="M11 13H5V11H11V5H13V11H19V13H13V19H11V13Z" fill="white"/>
+                </g>
+                </svg>
+    
+                <svg id="menos5" class="hidden w-[44px] sm:w-[62px] h-[44px] sm:h-[62px]" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <mask id="mask0_289_101" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+                  <rect width="24" height="24" fill="#D9D9D9"/>
+                  </mask>
+                  <g mask="url(#mask0_289_101)">
+                  <path d="M5 13V11H19V13H5Z" fill="white"/>
+                  </g>
+                  </svg>
+                              
+        
+              </p></button>
+    
+
+           </section>
+   
+           <section id="g5" class="sm:w-6/12 lg:w-5/12 hidden flex-col gap-1 justify-start items-start pt-6 pb-6 sm:pb-0 sm:pt-16 pl-10 pr-8 bg-[#00FFFF] text-[#4313BD] lining-nums">
+            <h3 class="mb-2 sm:mb-5 text-lg sm:text-2xl font-extrabold">GANADORES</h3>
+   
+             <div class="flex flex-col gap-1">
+              <h4 class="text-xs sm:text-sm font-bold">PRIMER LUGAR</h4>
+              <p class="text-base sm:text-lg font-bold">DESCONOCIDO</p>
+    
+              <ul class="list-disc ml-6 text-sm sm:text-[1.02rem]">
+              </ul>
+             </div>
+   
+             <div class="flex flex-col gap-1 my-6">
+              <h4 class="text-sm font-bold">SEGUNDO LUGAR</h4>
+              <p class="text-xs sm:text-lg font-bold">DESCONOCIDO</p>
+    
+              <ul class="list-disc ml-6 text-sm sm:text-[1.02rem]">
+               </ul>
+             </div>
+   
+             <div class="flex flex-col gap-1">
+              <h4 class="text-sm font-bold">TERCER LUGAR</h4>
+              <p class="text-xs sm:text-lg font-bold">DESCONOCIDO</p>
+    
+              <ul class="list-disc ml-6 text-sm sm:text-[1.02rem]">
+               </ul>
+             </div>
+     
+           </section>
+   
+           <img id="b5" 
+                src="2023.jpg" 
+                class="transition-all rounded-r-xl object-contain sm:w-6/12 lg:w-7/12 h-full sm:h-full"/>
+          <div>
+         </article>
+
+         
+        <!--Concurso 2024 -->
+        <article id="slide6" class="swiper-slide bg-white rounded-xl blur-sm">
+          <div class="w-full flex flex-col sm:flex-row  h-full rounded-xl">
+           
+        <section class="relative rounded-l-xl sm:w-6/12 lg:w-5/12 flex flex-col gap-3 justify-start items-start pt-6 pb-6 sm:pb-0 sm:pt-16  pl-10 pr-8 bg-[#4313BD] text-white lining-nums">
+            <div class="flex flex-col gap-1 sm:gap-3">
+             <h3 class="sm:mb-3 text-lg sm:text-xl lg:text-lg xl:text-2xl font-extrabold">CONCURSO 2024</h3>
+   
+             <div class="flex flex-col gap-2">
+   
+              <p class="hidden text-sm lg:text-sm xl:text-lg font-bold">RONDA 1</p>
+   
+              <ul class="list-disc ml-6 text-sm lg:text-xs xl:text-[1.02rem]">
+                <li>MATEMÁTICAS ELEMENTALES</li>
+               <li>ALGEBRA SUPERIOR</li>
+              </ul>
+             </div>
+   
+             <div class="hidden flex-col gap-2 my-2">
+              <p class="text-sm lg:text-sm xl:text-lg font-bold">RONDA 2</p>
+   
+              <ul class="list-disc ml-6 text-sm lg:text-xs xl:text-[1.02rem]">
+                <li>REGLAS DE DERIVACIÓN</li>
+               <li>REGLAS DEL PRODUCTO Y EL COCIENTE</li>
+               <li>LA REGLA DE LA CADENA</li>
+              </ul>
+             </div>
+   
+             <div class="hidden flex-col gap-2">
+              <p class="text-sm lg:text-sm xl:text-lg font-bold">RONDA 3</p>
+   
+              <ul class="list-disc ml-6 text-sm lg:text-xs xl:text-[1.02rem]">
+               <li>DERIVACIÓN IMPLÍCITA</li>
+               <li>NÚMEROS CRÍTICOS DE UNA FUNCIÓN</li>
+               <li>VALORES MÁXIMOS Y MÍNIMOS DE UNA FUNCIÓN</li>
+               <li>CONCAVIDAD</li>
+              </ul>
+   
+             </div>
+            </div>
+
+            <button onclick="modificarSlide(6)" class="sm:desktop z-10 absolute bottom-0 left-1/2 sm:left-auto sm:bottom-auto -translate-x-1/2 sm:-translate-x-0 translate-y-1/2 sm:-right-8 sm:top-1/2 transform sm:-translate-y-1/2 text-white bg-transparent "><p class="bg-[#8F32E0] w-11 sm:w-16 h-11 sm:h-16 text-7xl text-center pb-10  rounded-full">
+
+              <svg id="mas6" class="w-[44px] sm:w-[62px] h-[44px] sm:h-[62px]" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <mask id="mask0_289_91" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+                <rect width="24" height="24" fill="#D9D9D9"/>
+                </mask>
+                <g mask="url(#mask0_289_91)">
+                <path d="M11 13H5V11H11V5H13V11H19V13H13V19H11V13Z" fill="white"/>
+                </g>
+                </svg>
+    
+                <svg id="menos6" class="hidden w-[44px] sm:w-[62px] h-[44px] sm:h-[62px]" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <mask id="mask0_289_101" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+                  <rect width="24" height="24" fill="#D9D9D9"/>
+                  </mask>
+                  <g mask="url(#mask0_289_101)">
+                  <path d="M5 13V11H19V13H5Z" fill="white"/>
+                  </g>
+                  </svg>
+                              
+        
+              </p></button>
+    
+
+           </section>
+
+   
+           <section id="g6" class="sm:w-6/12 lg:w-5/12 hidden flex-col gap-1 justify-start items-start pt-6 pb-6 sm:pb-0 sm:pt-16 pl-10 pr-8 bg-[#00FFFF] text-[#4313BD] lining-nums">
+            <h3 class="mb-2 sm:mb-5 text-lg sm:text-2xl font-extrabold">GANADORES</h3>
+   
+             <div class="flex flex-col gap-1">
+              <h4 class="text-xs sm:text-sm font-bold">PRIMER LUGAR</h4>
+              <p class="text-base sm:text-lg font-bold">POR DEFINIRSE</p>
+    
+              <ul class="hidden list-disc ml-6 text-sm sm:text-[1.02rem]">
+               <li>BRYAN VIOLANTE ARRIAGA</li>
+               <li>CARLOS EFRAÍN BRAVO SÁNCHEZ</li>
+               <li>DANIEL DÍAZ OZUNA</li>
+              </ul>
+             </div>
+   
+             <div class="flex flex-col gap-1 my-6">
+              <h4 class="text-sm font-bold">SEGUNDO LUGAR</h4>
+              <p class="text-xs sm:text-lg font-bold">POR DEFINIRSE</p>
+    
+              <ul class="hidden list-disc ml-6 text-sm sm:text-[1.02rem]">
+               <li>
+                JONATHAN DE LA CRUZ HUERTA                
+              </li>
+               <li>
+                INÉS YAELIN ROJAS HUERTA
+              </li>
+               <li>
+                BELÉN VALERIO VARGAS
+
+               </li>
+              </ul>
+             </div>
+   
+             <div class="flex flex-col gap-1">
+              <h4 class="text-sm font-bold">TERCER LUGAR</h4>
+              <p class="text-xs sm:text-lg font-bold">POR DEFINIRSE</p>
+    
+              <ul class="hidden list-disc ml-6 text-sm sm:text-[1.02rem]">
+               <li>DIEGO QUINTANA HERNÁNDEZ</li>
+               <li>JOSÉ M. NAVARRETE FUENTES.</li>
+              </ul>
+             </div>
+     
+           </section>
+   
+           <img id="b6" 
+                src="sliderPrueba.jpg" 
+                class="transition-all rounded-r-xl object-contain sm:w-6/12 lg:w-7/12 h-full sm:h-full"/>
+          <div>
+         </article>
+
+         
+
+
+
+
+
+      </div>
+
+
+      <div class="swiper-pagination"></div>
+    </article>
+  
+
+
+
+
+  </section>
+
+
+  <script>
+   import Swiper from 'swiper';
+   import 'swiper/css';
+   import 'swiper/css/navigation'
+   import 'swiper/css/pagination'
+   import 'swiper/css/effect-coverflow'
+
+   
+   import { Autoplay ,Navigation, Pagination, EffectCoverflow } from 'swiper/modules';
+
+   const swiper2 = new Swiper('.swiper2', {
+    effect:"coverflow",
+    autoplay:{
+     delay: 20000,
+    },
+    grabCursor: true,
+    slidesPerView: "auto",
+    modules:[Autoplay , Navigation, Pagination, EffectCoverflow],
+    coverflowEffect:{
+     rotate:0,
+     modifier:3,
+     stretch:-80,
+     slideShadows:false
+    },
+
+    pagination: {
+     el: ".swiper-pagination",
+     clickable:true
+    }
+
+   })
+
+
+
+
+  
+  </script>

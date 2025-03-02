@@ -20,7 +20,7 @@
  
  
      <select id="selectParticipacion" name="concurso" class="sm:w-1/2 px-3 py-2 border-2 bg-white border-[#1618DF] text-[#1618DF] text-lg 3xl:text-xl rounded-full" required>
-      <option value="Quiero contribuir con mi arte matematico">Quiero contribuir con mi arte matematico</option>
+      <option value="Quiero vender">Quiero vender</option>
       <option value="Quiero realizar una actividad">Quiero realizar una actividad</option>
      </select>
  
@@ -40,14 +40,14 @@
  
       <div class="flex w-full justify-between gap-11">
  
-       <div class=" flex flex-col gap-5 w-full sm:w-1/2">
+       <div class="flex flex-col gap-5 w-1/2">
         <label class="ml-0 text-[#1618DF] text-lg 3xl:text-xl font-bold">
          Nombre
         </label>
  
         <input
          name="nombre1" 
-         class=" px-4 py-1 border-2 bg-white border-[#4313BD] text-[#1618DF] text-lg 3xl:text-xl rounded-2xl"
+         class="px-4 py-1 border-2 bg-white border-[#4313BD] text-[#1618DF] text-lg 3xl:text-xl rounded-2xl"
          placeholder="Nombre completo"
          required
         />
@@ -98,7 +98,7 @@
  
  
      <h4 id="texto-participacion" class="text-[#1618DF] text-lg 3xl:text-xl font-bold">
-      QUIERO CONTRIBUIR CON MI ARTE MATEMATICO
+      QUIERO VENDER
      </h4>
  
      <label  class="text-[#1618DF] text-lg 3xl:text-xl font-bold">
@@ -106,7 +106,7 @@
      </label>
  
      <textarea name="descripcion" placeholder="Describe de forma breve tu proyecto"
-               class="px-4 py-3 bg-white border-2 border-[#1618DF] rounded-2xl text-[#1618DF] text-lg 3xl:text-xl"></textarea>
+               class="px-4 py-1 bg-white border-2 border-[#1618DF] rounded-2xl text-[#1618DF] text-lg 3xl:text-xl"></textarea>
      
  
  
@@ -121,7 +121,7 @@
      <div id="p2" class="hidden gap-5 w-full">
      
        <h4 class="text-[#1618DF] text-lg 3xl:text-xl font-bold proportional-nums lining-nums">
-        DATOS DEL PARTICIPANTE
+        DATOS DEL PARTICIPANTE 2
        </h4>
  
  
@@ -194,7 +194,7 @@
     <div id="p3" class="hidden gap-5 w-full">
      
      <h4 class="text-[#1618DF] text-lg 3xl:text-xl font-bold proportional-nums lining-nums">
-      DATOS DEL PARTICIPANTE
+      DATOS DEL PARTICIPANTE 3
      </h4>
  
      <div class="w-full flex justify-end mr-3">
@@ -267,7 +267,7 @@
   <div id="p4" class="hidden gap-5 w-full">
      
    <h4 class="text-[#1618DF] text-lg 3xl:text-xl font-bold proportional-nums lining-nums">
-    DATOS DEL PARTICIPANTE
+    DATOS DEL PARTICIPANTE 4
    </h4>
  
    <div class="w-full flex justify-end mr-3">
@@ -399,11 +399,7 @@
  
    }  
    if(formulariosOcultos.length==0)
-   {
     document.getElementById("botonAgregar").disabled = true;
-    document.getElementById("botonAgregar").classList.remove("hover:cursor-pointer");
-    document.getElementById("botonAgregar").classList.add("hover:cursor-not-allowed");
-   }
    console.log("ADD Ocultos: "+formulariosOcultos);
    console.log("ADD Activos: "+formulariosActivos);
    
