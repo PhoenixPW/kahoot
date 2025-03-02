@@ -117,7 +117,14 @@ details[open] summary::after {
   display: flex;
   justify-content: center;
   gap: 18px;
-  bottom: -90px !important; /* Ajusta este valor para mover los bullets */
+  bottom: 50px !important;
+}
+
+.swiper6 .swiper-pagination {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  bottom: 40px !important;
 }
 
 .swiper-pagination-bullet {
@@ -135,6 +142,37 @@ details[open] summary::after {
   height: 35px !important; 
 }
 
+.swiper5 .swiper-pagination-bullet {
+  background-color: #FDFEFF !important ;
+  opacity: 100% !important;
+  width: 41px !important;
+  height: 35px !important;
+  transition: all 0.25s cubic-bezier(1, 0.6, 0.6, 1);
+}
+
+.swiper5 .swiper-pagination-bullet-active {
+  background-color: #1618DF !important;
+  border-radius: 30px !important;
+  width: 105px !important;
+  height: 35px !important; 
+}
+
+.swiper6 .swiper-pagination-bullet {
+  background-color: #FDFEFF !important ;
+  opacity: 100% !important;
+  width: 22px !important;
+  height: 22px !important;
+  transition: all 0.25s cubic-bezier(1, 0.6, 0.6, 1);
+}
+
+.swiper6 .swiper-pagination-bullet-active {
+  background-color: #1618DF !important;
+  border-radius: 30px !important;
+  width: 48px !important;
+  height: 22px !important; 
+}
+
+
 @media (max-width:550px)
 {
 
@@ -143,7 +181,7 @@ details[open] summary::after {
  }
  .swiper-pagination {
 
-  bottom: -50px !important;
+  bottom: 20px !important;
  }
 
  .swiper-pagination-bullet{
@@ -197,7 +235,7 @@ h2[data-scroll="out"] {
 }
 
 
-
+/*
 #comiteHeader[data-scroll="in"] {
   transform: translateY(0rem);
 }
@@ -205,7 +243,7 @@ h2[data-scroll="out"] {
 #comiteHeader[data-scroll="out"] {
   transform: translateY(-5rem);
 }
-
+*/
 
 #desk2[data-scroll="in"] {
   left: 0%;
