@@ -44,25 +44,21 @@
    import Swiper from 'swiper';
    import 'swiper/css';
    import 'swiper/css/navigation'
-   import 'swiper/css/effect-cards'
    
-   import { Autoplay ,Scrollbar ,Navigation, EffectCards } from 'swiper/modules';
+   import { Autoplay ,Scrollbar ,Navigation } from 'swiper/modules';
 
    const swiper = new Swiper('.swiper3', {
     spaceBetween:30,
     loop:true,
-    speed:6500,
+    loopAdditionalSlides: 10,
+    speed:4500,
     autoplay:{
-     delay: 0,
+     delay: 1,
     },
     grabCursor: true,
     slidesPerView: "auto",
-    freeMode: {
-     enabled: true,
-     momentum: false
-    }
-    ,
-    modules:[Autoplay ,Scrollbar, Navigation, EffectCards],
+
+    modules:[Autoplay ,Scrollbar, Navigation ],
 
     
    })

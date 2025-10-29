@@ -9,7 +9,7 @@ export const Reloj = ({versionMovil}) => {
 
     const calcularTiempoRestante = () => {
      const fechaActual = new Date();
-     const fechaConcurso = new Date('2025-03-12T11:00:00');
+     const fechaConcurso = new Date('2025-11-26T11:00:00');
 
      // Calcular la diferencia en milisegundos
      const diferenciaEnMs = fechaConcurso - fechaActual;
@@ -19,10 +19,10 @@ export const Reloj = ({versionMovil}) => {
      const minutos = Math.floor((diferenciaEnMs / (1000 * 60)) % 60);
      const horas = Math.floor((diferenciaEnMs / (1000 * 60 * 60)) % 24);
      const dias = Math.floor(diferenciaEnMs / (1000 * 60 * 60 * 24));
-     setDias(dias);
-     setHoras(horas);
-     setMinutos(minutos);
-     setSegundos(segundos);
+     setDias(dias<0?0:dias);
+     setHoras(horas<0?0:horas);
+     setMinutos(minutos<0?0:minutos);
+     setSegundos(segundos<0?0:segundos);
 
      //console.log(`Faltan ${dias} días, ${horas} horas, ${minutos} minutos y ${segundos} segundos para el concurso.`);     
     }
@@ -36,7 +36,7 @@ export const Reloj = ({versionMovil}) => {
 
     return(
      <>
-      <article class={`w-full ${versionMovil?"flex sm:hidden":"hidden sm:flex"} flex-col gap-16 h-full justify-center items-center py-8 bg-[#1618DF] text-center text-xl rounded-b-lg sm:rounded-bl-lg `}>
+      <article class={`w-full ${versionMovil?"flex sm:hidden":"hidden sm:flex"} flex-col gap-16 h-full justify-center items-center py-8 bg-[#4313BD] text-center text-xl rounded-b-lg sm:rounded-bl-lg `}>
  
        <div class="text-white">
  
