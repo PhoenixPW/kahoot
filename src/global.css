@@ -117,7 +117,7 @@ details[open] summary::after {
   display: flex;
   justify-content: center;
   gap: 18px;
-  bottom: 50px !important;
+  bottom: -80px !important;
 }
 
 .swiper6 .swiper-pagination {
@@ -181,7 +181,7 @@ details[open] summary::after {
  }
  .swiper-pagination {
 
-  bottom: 20px !important;
+  bottom: -50px !important;
  }
 
  .swiper-pagination-bullet{
